@@ -1,0 +1,54 @@
+.reglog {
+  margin: auto;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  border: 1px solid var(--grey);
+  padding: 1vw;
+  border-radius: 4px;
+  font-size: small;
+  margin-top: 10px;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1vh 0;
+}
+.auth-submit {
+  width: 100%;
+  margin: auto;
+  height: 30px;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  border: 1px solid var(--grey);
+  border-radius: 2px;
+  padding: 1px 4px;
+}
+
+label {
+  padding: 0.4vh 0;
+  width: 100%;
+}
+
+p.regloglink {
+  font-size: x-small;
+  padding: 10px;
+}
+p.regloglink > a {
+  color: blue;
+  text-decoration: underline;
+}

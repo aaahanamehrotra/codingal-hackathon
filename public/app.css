@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  --primary-color: #004b74;
+  --secondary-color: #e29e21;
+  --tertiary-color: #a3d2ff;
+  --quartary-color: #f1f1e6;
+  --grey: #3c4856;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  padding: 1vw;
+}

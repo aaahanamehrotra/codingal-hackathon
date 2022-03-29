@@ -1,0 +1,16 @@
+footer {
+  height: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+pre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+pre > * {
+  font-family: "Hurricane", cursive;
+  font-size: 40px;
+}
