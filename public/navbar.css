@@ -1,5 +1,4 @@
 nav {
-  background-color: aqua;
   display: flex;
   justify-content: space-between;
   padding: 1.5vh 2vw;
@@ -35,9 +34,6 @@ span.nav {
 }
 
 @media (max-width: 600px) {
-  nav {
-    background-color: red;
-  }
   .hamburger {
     width: 20px;
     height: 20px;
