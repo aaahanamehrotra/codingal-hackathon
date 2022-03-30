@@ -1,5 +1,5 @@
 nav {
-  /* background-color: var(--quartary-color); */
+  background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
   padding: 1.5vh 2vw;
@@ -12,7 +12,7 @@ nav {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  width: 40vw;
+  width: 50vw;
   align-items: center;
   font-weight: 500;
   font-size: medium;
@@ -32,6 +32,14 @@ span.nav {
 }
 .navbar-sm {
   display: none;
+}
+.logo {
+  font-family: "Righteous", cursive;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 50px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 @media (max-width: 600px) {
@@ -61,7 +69,7 @@ span.nav {
     display: flex;
     flex-direction: column;
     height: 95vh;
-    background-color: var(--quartary-color);
+    background-color: var(--tertiary-color);
     position: fixed;
     width: 100%;
     left: 100vw;
@@ -71,5 +79,7 @@ span.nav {
   }
   .right.visible {
     left: 0;
+  }
+  .logo {
   }
 }

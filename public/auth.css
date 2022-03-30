@@ -30,9 +30,11 @@ form {
   border-radius: 4px;
   color: white;
   cursor: pointer;
+  margin: 0.5vw 0;
 }
 
-input {
+input,
+textarea {
   border: none;
   border: 1px solid var(--grey);
   border-radius: 2px;

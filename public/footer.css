@@ -1,16 +1,16 @@
 footer {
-  height: 25vw;
+  height: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-pre {
+footer > pre {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-pre > * {
+footer > pre > * {
   font-family: "Hurricane", cursive;
   font-size: 40px;
 }
