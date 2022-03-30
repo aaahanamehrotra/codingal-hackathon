@@ -10,11 +10,10 @@
 
 .success,
 .error {
-  margin: 2px;
+  margin: 2px auto;
   padding: 6px;
   border-radius: 2px;
   width: 240px;
   text-align: center;
   font-size: small;
-  margin: auto;
 }
