@@ -52,7 +52,7 @@ router.post('/register', (req, res) => {
           password,
           password2,
           subjects,
-          selectedsubjects
+          selectedsubjects:Object.keys(selectedsubjects)
         });
       } else {
         const newUser = new User({
