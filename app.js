@@ -34,12 +34,15 @@ app.use((req, res, next) =>{
 res.locals.success_msg = req.flash('success_msg')
 res.locals.error_msg = req.flash('error_msg')
 res.locals.error = req.flash('error')
+res.locals.login = req.isAuthenticated();
 next()
 })
 
 app.use('/', require('./routes/index'))
 app.use('/users', require('./routes/users'))
 app.use('/blog', require('./routes/blog'))
+app.use('/subjects', require('./routes/subjects'))
+app.use('/subjectposts', require('./routes/subjectposts'))
 
 
 const PORT = process.env.PORT || 5000;

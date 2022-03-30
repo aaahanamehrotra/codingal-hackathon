@@ -29,7 +29,7 @@ router.post('/create', async(req, res) => {
                     article
             });
             }else{
-                const newPost = new Post(req.body)
+                const newPost = new Post({...req.body, subject:"general"})
                 try{
                     const savedPost = newPost.save().then( post =>
                     res.render("singlepost", {data: post}))
@@ -43,7 +43,7 @@ router.post('/create', async(req, res) => {
 
 router.get("/", async(req, res)=>{
     try{
-        let posts = await Post.find();
+        let posts = await Post.find({subject:"general"});
         const x = posts
         res.render("general", {data: x})
     }catch(err){

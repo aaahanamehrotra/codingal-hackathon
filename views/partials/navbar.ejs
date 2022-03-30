@@ -6,9 +6,12 @@
     <li class="item"><a href="/">Home</a></li>
     <li class="item"><a href="/about">About</a></li>
     <li class="item"><a href="/blog">Blog</a></li>
+    <% if (login) { %>
     <li class="item"><a href="/profile">Profile</a></li>
+    <% }else{ %>
     <li class="item"><a href="/users/register">Register</a></li>
     <li class="item"><a href="/users/login">Login</a></li>
+    <% } %>
   </div>
   <div class="hamburger">
     <span class="item1 nav"></span>
@@ -16,5 +19,3 @@
     <span class="item3 nav"></span>
   </div>
 </nav>
-
-<div class="navbar-sm"></div>

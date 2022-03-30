@@ -13,6 +13,10 @@ const PostSchema = new mongoose.Schema({
     username:{
         type: String,
         required: true,
+    },
+    subject:{
+        type: String,
+        required: true,
     }
     },{timestamps: true});
 

@@ -11,7 +11,7 @@
   <div class="post">
     <div class="post-body">
       <h2 class="post-title"><%= data[i].title %></h2>
-      <p class="article"><%= data[i].article%></p>
+
       <div class="details">
         <div class="username">By <%= data[i].username %></div>
         <div class="date">
@@ -19,7 +19,9 @@
           data[i].createdAt.toUTCString().slice(16) %>
         </div>
       </div>
+      <div class="article"><%= data[i].article%></div>
     </div>
+
     <div class="read-div">
       <a href="<%= x %>">Read More</a>
     </div>

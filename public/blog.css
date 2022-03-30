@@ -2,7 +2,7 @@
   margin: 2vw;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 
 .post {
@@ -18,6 +18,7 @@
   border-top: 1px solid var(--primary-color);
   padding: 10px;
   text-align: center;
+  background-color: var(--quartary-color);
 }
 
 .post-body > .article {
@@ -27,6 +28,7 @@
   -webkit-line-clamp: 3; /* number of lines to show */
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-top: 0.5vw;
 }
 
 .post-body {
@@ -35,6 +37,7 @@
 
 .post-title {
   text-align: center;
+  margin: 1vw 0;
 }
 
 a.create {
@@ -52,4 +55,10 @@ a.create {
 .create-wrapper {
   display: flex;
   justify-content: end;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw 0;
 }

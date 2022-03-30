@@ -1,0 +1,26 @@
+<h1><%= subject.charAt(0).toUpperCase()+subject.slice(1) %></h1>
+<div><%- include ("./partials/createcontent"); %></div>
+<div>
+  <% for (let i = 0; i < data.length; i++) { %> <%if(data[i].subject ===
+  subject){ %>
+  <div>
+    <h2><%= data[i].title %></h2>
+    <% let d = String(data[i].createdAt.getDate()).padStart(2, '0') %> <% let m
+    = String(data[i].createdAt.getMonth() + 1).padStart(2, '0') %> <% let y =
+    data[i].createdAt.getFullYear() %>
+
+    <div><%= data[i].article.slice(0, 200) + "..." %></div>
+    <div>
+      <% let x = `/specific-post/${data[i]._id}` %>
+      <div>By <%= data[i].username %></div>
+      <div>
+        <%= d + '/' + m + '/' + y %> <%=
+        data[i].createdAt.toUTCString().slice(16) %>
+      </div>
+    </div>
+    <div>
+      <a href="<%=x%>">Read More</a>
+    </div>
+  </div>
+  <%}%> <% } %>
+</div>

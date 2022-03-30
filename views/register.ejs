@@ -42,6 +42,33 @@
         value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
       />
     </div>
+    <div>
+      <p>Subjects</p>
+      <%for(var i = 0; i < subjects.length; i++){%>
+      <div>
+        <input
+          type="checkbox"
+          name="<%=subjects[i] %>"
+          <%
+          if(selectedsubjects.includes(subjects[i])){%>
+
+        <%= "checked" %> <%}%> />
+        <label for="<%=subjects[i] %>"><%=subjects[i] %></label>
+      </div>
+      <%}%>
+    </div>
+    <p>Role</p>
+    <div>
+      <div>
+        <input type="radio" name="role" value="student" checked />
+        <label for="role" class="role-label">Student</label>
+      </div>
+
+      <div>
+        <input type="radio" name="role" value="mentor" />
+        <label for="role" class="role-label">Mentor</label>
+      </div>
+    </div>
     <div class="input-group">
       <button type="submit" class="auth-submit">Register</button>
     </div>

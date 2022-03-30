@@ -1,23 +1,30 @@
 <div>
   <h1>Profile</h1>
   <div>
-    <h2>Name</h2>
+    <h4>Name</h4>
     <%= user.name %>
   </div>
 
   <div>
-    <h2>Email</h2>
+    <h4>Email</h4>
     <%= user.email %>
   </div>
 
   <div>
-    <h2>Role</h2>
+    <h4>Role</h4>
     <%= user.role%>
   </div>
 
   <div>
-    <h2>subject(s)</h2>
-    <div></div>
+    <h4>subject(s)</h4>
+    <div>
+      <%for(var i = 0; i < user.subjects.length; i++){%><a
+        href="/subjects/<%= user.subjects[i]%>"
+        class="sub-single"
+      >
+        <%= user.subjects[i]%> </a
+      ><%}%>
+    </div>
   </div>
 
   <a href="/updateprofile" class="updateprofile">UPDATE</a>
