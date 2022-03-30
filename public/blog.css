@@ -46,7 +46,6 @@ a.create {
   height: 40px;
   width: 180px;
   margin: 20px;
-  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
