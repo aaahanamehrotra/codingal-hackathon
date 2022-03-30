@@ -10,7 +10,7 @@ const {subjects} = require('../data/subjects')
 router.get('/login', (req, res) => res.render('login'));
 
 // Register Page
-router.get('/register', (req, res) => res.render('register', {subjects:subjects, selectedsubjects:[]}));
+router.get('/register', (req, res) => res.render('register', {subjects:subjects, selectedsubjects:new Array()}));
 
 // Register
 router.post('/register', (req, res) => {
