@@ -17,8 +17,13 @@ form.create-form {
 }
 
 .create-group > textarea {
+  max-width: 100%;
   width: 100%;
 }
 textarea {
   min-height: 250px;
+}
+
+select {
+  width: 100%;
 }
